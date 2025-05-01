@@ -10,7 +10,7 @@ export default function Home() {
       <section className="relative h-screen flex items-center justify-center">
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=2574"
+            src="https://avatars.mds.yandex.net/get-altay/5533948/2a0000017cdc90d8744fff9d46b7e048187c/XXL_height"
             alt="Fresh Produce"
             fill
             className="object-cover"
