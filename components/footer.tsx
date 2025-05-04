@@ -30,8 +30,8 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/exports" className="text-gray-400 hover:text-[#9AC450] transition-colors">
-                  Exports
+                <Link href="/Blog" className="text-gray-400 hover:text-[#9AC450] transition-colors">
+                  Blog
                 </Link>
               </li>
               <li>

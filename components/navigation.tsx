@@ -27,7 +27,7 @@ export function Navigation() {
             <Link href="/products" className="text-gray-700 hover:text-[#9AC450] transition-colors">
               Our Products
             </Link>
-            <Link href="/exports" className="text-gray-700 hover:text-[#9AC450] transition-colors">
+            <Link href="/Blog" className="text-gray-700 hover:text-[#9AC450] transition-colors">
               Exports
             </Link>
             <Link href="/contact" className="text-gray-700 hover:text-[#9AC450] transition-colors">
