@@ -6,6 +6,11 @@ import { Globe, PackageCheck, ShieldCheck, TrendingUp, Phone, Mail, TrendingUpIc
 import { AnimatedBanner } from "@/components/animated-banner";
 import { useEffect, useState, useRef } from "react";
 
+const generatePath = (points) => {
+  if (points.length < 2) return '';
+  return points.map((point, i) => `${i === 0 ? 'M' : 'L'} ${point.x} ${point.y}`).join(' ');
+};
+
 const blogPosts = [
   {
     image: 'https://static.seekingalpha.com/cdn/s3/uploads/getty_images/1402625142/image_1402625142.jpg?io=getty-c-w1536',
