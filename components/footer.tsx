@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Logo } from "./Logo";
-import { Facebook, Instagram, Mail, MessageCircle } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Mail, MessageCircle } from "lucide-react";
 
 
 export function Footer() {
@@ -55,14 +55,17 @@ export function Footer() {
               <a href="https://www.instagram.com/trademates_global" className="text-gray-400 hover:text-[#1877F2] transition-colors">
                 <Facebook className="w-6 h-6" />
               </a>
-              <a href="https://www.instagram.com/trademates_global" className="text-gray-400 hover:text-[#ff5347] transition-colors">
+              <a href="mailto:info@trademates.com" className="text-gray-400 hover:text-[#ff5347] transition-colors">
                 <Mail className="w-6 h-6" />
+              </a>
+              <a href="https://www.instagram.com/trademates_global" className="text-gray-400 hover:text-[#25D366] transition-colors">
+                <MessageCircle className="w-6 h-6" />
               </a>
               <a href="https://www.instagram.com/trademates_global" className="text-gray-400 hover:text-[#ff4f6f] transition-colors">
                 <Instagram className="w-6 h-6" />
               </a>
-              <a href="https://www.instagram.com/trademates_global" className="text-gray-400 hover:text-[#25D366] transition-colors">
-                <MessageCircle className="w-6 h-6" />
+              <a href="https://www.linkedin.com/trademates_global" className="text-gray-400 hover:text-[#1877F2] transition-colors">
+                <Linkedin className="w-6 h-6" />
               </a>
             </div>
           </div>

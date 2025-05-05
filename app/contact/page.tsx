@@ -83,7 +83,7 @@ export default function ContactPage() {
         className="max-w-3xl mx-auto text-center -mt-8 mb-12 px-4"
       >
         <div className="bg-white/90 backdrop-blur-sm rounded-lg shadow-lg p-6 border border-gray-100">
-          <h2 className="text-xl md:text-2xl font-medium text-gray-700 mb-2">We're Here to Help</h2>
+          <h2 className="text-xl md:text-2xl font-medium text-gray-700 mb-2">We&apos;re Here to Help</h2>
           <p className="text-gray-500">Reach out to our team through any of the channels below</p>
           
           <motion.div 
@@ -113,57 +113,7 @@ export default function ContactPage() {
           transition={{ duration: 0.8 }}
           className="grid grid-cols-1 md:grid-cols-2 gap-12"
         >
-          <div>
-            <h2 className="text-2xl font-semibold mb-6">Get in Touch</h2>
-            <div className="space-y-8">
-              {[
-                { 
-                  icon: <MapPin className="w-6 h-6 text-white" />, 
-                  title: "Address", 
-                  content: "123 Trade Street, Business District, 12345", 
-                  color: "bg-[#9AC450]",
-                  animation: floatAnimation,
-                  hoverEffect: "hover:shadow-lg hover:shadow-green-200/50"
-                },
-                { 
-                  icon: <Phone className="w-6 h-6 text-white" />, 
-                  title: "Phone", 
-                  content: "+1 234 567 890", 
-                  color: "bg-[#BFB840]",
-                  animation: pulseAnimation,
-                  hoverEffect: "hover:shadow-lg hover:shadow-yellow-200/50"
-                },
-                { 
-                  icon: <Mail className="w-6 h-6 text-white" />, 
-                  title: "Email", 
-                  content: "info@trademates.com", 
-                  color: "bg-[#F29C22]",
-                  animation: rotateAnimation,
-                  hoverEffect: "hover:shadow-lg hover:shadow-orange-200/50"
-                }
-              ].map((item, index) => (
-                <motion.div
-                  key={item.title}
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: index * 0.2 }}
-                  whileHover={{ scale: 1.03, transition: { duration: 0.2 } }}
-                  className={`flex items-start space-x-4 p-4 rounded-lg border border-gray-100 ${item.hoverEffect} transition-shadow duration-300`}
-                >
-                  <motion.div 
-                    animate={item.animation}
-                    className={`w-14 h-14 ${item.color} rounded-full flex items-center justify-center flex-shrink-0`}
-                  >
-                    {item.icon}
-                  </motion.div>
-                  <div className="pt-2">
-                    <h3 className="font-semibold text-lg mb-1">{item.title}</h3>
-                    <p className="text-gray-600">{item.content}</p>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </div>
+        
 
           <motion.div
             initial={{ opacity: 0, x: 20 }}
@@ -250,6 +200,7 @@ export default function ContactPage() {
               </motion.button>
             </form>
           </motion.div>
+          
         </motion.div>
       </div>
 
@@ -307,7 +258,7 @@ export default function ContactPage() {
               <h2 className="text-3xl font-bold mb-6">Visit Our Office</h2>
               <p className="text-gray-600 mb-8">
                 Our team is ready to assist with your export needs. Reach out via phone or
-                email and we'll respond promptly.
+                email and we&apos;ll respond promptly.
               </p>
               <motion.div 
                 initial="hidden"
@@ -321,7 +272,7 @@ export default function ContactPage() {
                   className="flex items-center"
                 >
                   <div className="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center text-white mr-4">
-                    <Phone size={20} />
+                    <a href="tel:+919867635052"><Phone size={20} /></a>
                   </div>
                   <div>
                     <p className="text-sm text-gray-500">Phone</p>
@@ -334,7 +285,8 @@ export default function ContactPage() {
                   className="flex items-center"
                 >
                   <div className="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center text-white mr-4">
-                    <Mail size={20} />
+                    
+                    <a href="mailto:info@trademates.co.in"><Mail size={20} /></a>
                   </div>
                   <div>
                     <p className="text-sm text-gray-500">Email</p>
